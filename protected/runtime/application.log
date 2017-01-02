@@ -1,0 +1,870 @@
+2016/12/30 15:21:08 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "index.php". in /home/abhinav/Projects/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CController.php(270): CController->missingAction('index.php')
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('index.php')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index.php')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=site/index.php
+---
+2016/12/30 15:35:51 [error] [php] Use of undefined constant Users - assumed 'Users' (/home/abhinav/Projects/demo/protected/controllers/UserController.php:7)
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CController.php(286): UserController->runAction()
+#1 /home/abhinav/Projects/yii/framework/web/CController.php(265): UserController->runActionWithFilters()
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): UserController->run()
+#3 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#5 /home/abhinav/Projects/demo/index.php(13): CWebApplication->run()
+REQUEST_URI=/demo/index.php?r=user
+in /home/abhinav/Projects/demo/protected/controllers/UserController.php (7)
+in /home/abhinav/Projects/demo/index.php (13)
+2016/12/30 16:09:53 [error] [exception.ParseError] ParseError: syntax error, unexpected 'if' (T_IF) in /home/abhinav/Projects/demo/protected/components/UserIdentity.php:26
+Stack trace:
+#0 [internal function]: YiiBase::autoload('UserIdentity')
+#1 /home/abhinav/Projects/demo/protected/models/LoginForm.php(51): spl_autoload_call('UserIdentity')
+#2 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:12:56 [error] [exception.ParseError] ParseError: syntax error, unexpected 'if' (T_IF) in /home/abhinav/Projects/demo/protected/components/UserIdentity.php:26
+Stack trace:
+#0 [internal function]: YiiBase::autoload('UserIdentity')
+#1 /home/abhinav/Projects/demo/protected/models/LoginForm.php(51): spl_autoload_call('UserIdentity')
+#2 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:13:05 [error] [exception.ParseError] ParseError: syntax error, unexpected 'if' (T_IF) in /home/abhinav/Projects/demo/protected/components/UserIdentity.php:26
+Stack trace:
+#0 [internal function]: YiiBase::autoload('UserIdentity')
+#1 /home/abhinav/Projects/demo/protected/models/LoginForm.php(51): spl_autoload_call('UserIdentity')
+#2 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:14:09 [error] [exception.ParseError] ParseError: syntax error, unexpected 'if' (T_IF) in /home/abhinav/Projects/demo/protected/components/UserIdentity.php:25
+Stack trace:
+#0 [internal function]: YiiBase::autoload('UserIdentity')
+#1 /home/abhinav/Projects/demo/protected/models/LoginForm.php(51): spl_autoload_call('UserIdentity')
+#2 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:14:26 [error] [exception.ParseError] ParseError: syntax error, unexpected 'if' (T_IF) in /home/abhinav/Projects/demo/protected/components/UserIdentity.php:25
+Stack trace:
+#0 [internal function]: YiiBase::autoload('UserIdentity')
+#1 /home/abhinav/Projects/demo/protected/models/LoginForm.php(51): spl_autoload_call('UserIdentity')
+#2 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:14:46 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'abhinav' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username = abhinav LIMIT 1.
+in /home/abhinav/Projects/demo/protected/components/UserIdentity.php (23)
+in /home/abhinav/Projects/demo/protected/models/LoginForm.php (52)
+in /home/abhinav/Projects/demo/protected/controllers/SiteController.php (88)
+2016/12/30 16:14:46 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'abhinav' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username = abhinav LIMIT 1 in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/abhinav/Projects/demo/protected/components/UserIdentity.php(23): CActiveRecord->find(Array)
+#4 /home/abhinav/Projects/demo/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#5 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#8 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#9 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#14 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:15:19 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Abhinav' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username = Abhinav LIMIT 1.
+in /home/abhinav/Projects/demo/protected/components/UserIdentity.php (23)
+in /home/abhinav/Projects/demo/protected/models/LoginForm.php (52)
+in /home/abhinav/Projects/demo/protected/controllers/SiteController.php (88)
+2016/12/30 16:15:19 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Abhinav' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username = Abhinav LIMIT 1 in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/abhinav/Projects/demo/protected/components/UserIdentity.php(23): CActiveRecord->find(Array)
+#4 /home/abhinav/Projects/demo/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#5 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#8 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#9 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#14 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:19:05 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'demo' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username = demo LIMIT 1.
+in /home/abhinav/Projects/demo/protected/components/UserIdentity.php (23)
+in /home/abhinav/Projects/demo/protected/models/LoginForm.php (52)
+in /home/abhinav/Projects/demo/protected/controllers/SiteController.php (88)
+2016/12/30 16:19:05 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'demo' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username = demo LIMIT 1 in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/abhinav/Projects/demo/protected/components/UserIdentity.php(23): CActiveRecord->find(Array)
+#4 /home/abhinav/Projects/demo/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#5 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#8 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#9 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#14 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:26:42 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Abhinav' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username=Abhinav LIMIT 1.
+in /home/abhinav/Projects/demo/protected/components/UserIdentity.php (23)
+in /home/abhinav/Projects/demo/protected/models/LoginForm.php (52)
+in /home/abhinav/Projects/demo/protected/controllers/SiteController.php (88)
+2016/12/30 16:26:42 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Abhinav' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username=Abhinav LIMIT 1 in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/abhinav/Projects/demo/protected/components/UserIdentity.php(23): CActiveRecord->find(Array)
+#4 /home/abhinav/Projects/demo/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#5 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#8 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#9 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#14 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:34:07 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'aaa' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username= aaa LIMIT 1.
+in /home/abhinav/Projects/demo/protected/components/UserIdentity.php (24)
+in /home/abhinav/Projects/demo/protected/models/LoginForm.php (52)
+in /home/abhinav/Projects/demo/protected/controllers/SiteController.php (88)
+2016/12/30 16:34:07 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'aaa' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username= aaa LIMIT 1 in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/abhinav/Projects/demo/protected/components/UserIdentity.php(24): CActiveRecord->find(Array)
+#4 /home/abhinav/Projects/demo/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#5 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#8 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#9 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#14 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:34:50 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sd' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username= sd LIMIT 1.
+in /home/abhinav/Projects/demo/protected/components/UserIdentity.php (24)
+in /home/abhinav/Projects/demo/protected/models/LoginForm.php (52)
+in /home/abhinav/Projects/demo/protected/controllers/SiteController.php (88)
+2016/12/30 16:34:50 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sd' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username= sd LIMIT 1 in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/abhinav/Projects/demo/protected/components/UserIdentity.php(24): CActiveRecord->find(Array)
+#4 /home/abhinav/Projects/demo/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#5 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#8 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#9 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#14 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:36:05 [error] [exception.ParseError] ParseError: syntax error, unexpected '=', expecting ')' in /home/abhinav/Projects/demo/protected/components/UserIdentity.php:24
+Stack trace:
+#0 [internal function]: YiiBase::autoload('UserIdentity')
+#1 /home/abhinav/Projects/demo/protected/models/LoginForm.php(51): spl_autoload_call('UserIdentity')
+#2 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:37:51 [error] [exception.ParseError] ParseError: syntax error, unexpected '=', expecting ')' in /home/abhinav/Projects/demo/protected/components/UserIdentity.php:24
+Stack trace:
+#0 [internal function]: YiiBase::autoload('UserIdentity')
+#1 /home/abhinav/Projects/demo/protected/models/LoginForm.php(51): spl_autoload_call('UserIdentity')
+#2 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#5 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#6 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:38:47 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Abhinav' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username = Abhinav LIMIT 1.
+in /home/abhinav/Projects/demo/protected/components/UserIdentity.php (24)
+in /home/abhinav/Projects/demo/protected/models/LoginForm.php (52)
+in /home/abhinav/Projects/demo/protected/controllers/SiteController.php (88)
+2016/12/30 16:38:47 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Abhinav' in 'where clause'. The SQL statement executed was: SELECT * FROM `users` `t` WHERE username = Abhinav LIMIT 1 in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 /home/abhinav/Projects/demo/protected/components/UserIdentity.php(24): CActiveRecord->find(Array)
+#4 /home/abhinav/Projects/demo/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#5 /home/abhinav/Projects/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 /home/abhinav/Projects/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 /home/abhinav/Projects/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#8 /home/abhinav/Projects/demo/protected/controllers/SiteController.php(88): CModel->validate()
+#9 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#14 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#16 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/demo/index.php?r=site/login
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2016/12/30 16:47:14 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "create". in /home/abhinav/Projects/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CController.php(270): CController->missingAction('create')
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/create')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=site/create
+---
+2016/12/30 16:53:05 [error] [php] urlencode() expects parameter 1 to be string, object given (/home/abhinav/Projects/yii/framework/web/CUrlManager.php:440)
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CUrlManager.php(310): CUrlManager->createUrlDefault()
+#1 /home/abhinav/Projects/yii/framework/base/CApplication.php(561): CUrlManager->createUrl()
+#2 /home/abhinav/Projects/yii/framework/web/CController.php(967): CWebApplication->createUrl()
+#3 /home/abhinav/Projects/yii/framework/web/CController.php(1028): UsersController->createUrl()
+#4 /home/abhinav/Projects/demo/protected/controllers/UsersController.php(74): UsersController->redirect()
+#5 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): UsersController->actionCreate()
+#6 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#8 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#11 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#13 /home/abhinav/Projects/yii/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#14 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): UsersController->run()
+#15 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /home/abhinav/Projects/demo/index.php(13): CWebApplication->run()
+REQUEST_URI=/demo/index.php?r=users/create
+in /home/abhinav/Projects/demo/protected/controllers/UsersController.php (74)
+in /home/abhinav/Projects/demo/index.php (13)
+2016/12/30 17:14:03 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "create". in /home/abhinav/Projects/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CController.php(270): CController->missingAction('create')
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create/')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=user/create/
+---
+2016/12/30 17:40:01 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "itemMaster/itemMaster/". in /home/abhinav/Projects/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#1 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/itemMaster/
+---
+2016/12/30 18:16:01 [error] [exception.CException] CException: Property "Items.brands_brand_id" is not defined. in /home/abhinav/Projects/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('brands_brand_id')
+#1 /home/abhinav/Projects/yii/framework/web/helpers/CHtml.php(2729): CActiveRecord->__get('brands_brand_id')
+#2 /home/abhinav/Projects/yii/framework/web/helpers/CHtml.php(1982): CHtml::resolveValue(Object(Items), 'brands_brand_id')
+#3 /home/abhinav/Projects/yii/framework/web/widgets/CActiveForm.php(914): CHtml::activeDropDownList(Object(Items), 'brands_brand_id', Array, Array)
+#4 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/_form.php(24): CActiveForm->dropDownList(Object(Items), 'brands_brand_id', Array)
+#5 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#6 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#8 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/create.php(18): CController->renderPartial('_form', Array)
+#9 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#10 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php(78): CController->render('create', Array)
+#14 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): ItemsController->actionCreate()
+#15 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#25 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#26 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+---
+2016/12/30 18:16:36 [error] [exception.CException] CException: Property "Items.brands_brand_id" is not defined. in /home/abhinav/Projects/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('brands_brand_id')
+#1 /home/abhinav/Projects/yii/framework/web/helpers/CHtml.php(2729): CActiveRecord->__get('brands_brand_id')
+#2 /home/abhinav/Projects/yii/framework/web/helpers/CHtml.php(1982): CHtml::resolveValue(Object(Items), 'brands_brand_id')
+#3 /home/abhinav/Projects/yii/framework/web/widgets/CActiveForm.php(914): CHtml::activeDropDownList(Object(Items), 'brands_brand_id', Array, Array)
+#4 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/_form.php(24): CActiveForm->dropDownList(Object(Items), 'brands_brand_id', Array)
+#5 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#6 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#8 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/create.php(18): CController->renderPartial('_form', Array)
+#9 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#10 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#12 /home/abhinav/Projects/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php(78): CController->render('create', Array)
+#14 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): ItemsController->actionCreate()
+#15 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#25 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#26 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+---
+2017/01/02 12:51:03 [error] [exception.CException] CException: CJuiDatePicker must specify "model" and "attribute" or "name" property values. in /home/abhinav/Projects/yii/framework/zii/widgets/jui/CJuiInputWidget.php:59
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/zii/widgets/jui/CJuiDatePicker.php(72): CJuiInputWidget->resolveNameID()
+#1 /home/abhinav/Projects/yii/framework/web/CBaseController.php(181): CJuiDatePicker->run()
+#2 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/_form.php(33): CBaseController->widget('zii.widgets.jui...', Array)
+#3 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#4 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#5 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#6 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/create.php(18): CController->renderPartial('_form', Array)
+#7 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#8 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#11 /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php(78): CController->render('create', Array)
+#12 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): ItemsController->actionCreate()
+#13 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#22 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#23 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2017/01/02 12:51:29 [error] [exception.CException] CException: CJuiDatePicker must specify "model" and "attribute" or "name" property values. in /home/abhinav/Projects/yii/framework/zii/widgets/jui/CJuiInputWidget.php:59
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/zii/widgets/jui/CJuiDatePicker.php(72): CJuiInputWidget->resolveNameID()
+#1 /home/abhinav/Projects/yii/framework/web/CBaseController.php(181): CJuiDatePicker->run()
+#2 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/_form.php(33): CBaseController->widget('zii.widgets.jui...', Array)
+#3 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#4 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#5 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#6 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/create.php(18): CController->renderPartial('_form', Array)
+#7 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#8 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#11 /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php(78): CController->render('create', Array)
+#12 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): ItemsController->actionCreate()
+#13 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#22 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#23 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+HTTP_REFERER=http://localhost/demo/index.php?r=site/login
+---
+2017/01/02 13:02:11 [error] [exception.CException] CException: Property "CNumberValidator.0" is not defined. in /home/abhinav/Projects/yii/framework/base/CComponent.php:173
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/validators/CValidator.php(177): CComponent->__set('0', 'integerOnly')
+#1 /home/abhinav/Projects/yii/framework/base/CModel.php(287): CValidator::createValidator(0, Object(Items), Array, Array)
+#2 /home/abhinav/Projects/yii/framework/base/CModel.php(260): CModel->createValidators()
+#3 /home/abhinav/Projects/yii/framework/base/CModel.php(304): CModel->getValidators('brand_id')
+#4 /home/abhinav/Projects/yii/framework/web/helpers/CHtml.php(1514): CModel->isAttributeRequired('brand_id')
+#5 /home/abhinav/Projects/yii/framework/web/widgets/CActiveForm.php(600): CHtml::activeLabelEx(Object(Items), 'brand_id', Array)
+#6 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/_form.php(23): CActiveForm->labelEx(Object(Items), 'brand_id')
+#7 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#8 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#9 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#10 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/create.php(18): CController->renderPartial('_form', Array)
+#11 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#12 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#13 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#14 /home/abhinav/Projects/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#15 /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php(78): CController->render('create', Array)
+#16 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): ItemsController->actionCreate()
+#17 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#24 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#26 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#27 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+---
+2017/01/02 13:02:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1364 Field 'created_date' doesn't have a default value. The SQL statement executed was: INSERT INTO `items` (`brand_id`, `item_name`, `cost`, `selling`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php (73)
+in /home/abhinav/Projects/demo/index.php (13)
+2017/01/02 13:02:35 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1364 Field 'created_date' doesn't have a default value. The SQL statement executed was: INSERT INTO `items` (`brand_id`, `item_name`, `cost`, `selling`) VALUES (:yp0, :yp1, :yp2, :yp3) in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php(73): CActiveRecord->save()
+#3 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): ItemsController->actionCreate()
+#4 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#14 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+HTTP_REFERER=http://localhost/demo/index.php?r=itemMaster/items/create
+---
+2017/01/02 13:04:32 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#9 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/admin
+HTTP_REFERER=http://localhost/demo/index.php?r=itemMaster/items/index
+---
+2017/01/02 13:04:38 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#9 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/admin
+HTTP_REFERER=http://localhost/demo/index.php?r=itemMaster/items/index
+---
+2017/01/02 13:06:06 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/demo/index.php?r=users/admin
+HTTP_REFERER=http://localhost/demo/index.php?r=users/index
+---
+2017/01/02 13:06:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "create". in /home/abhinav/Projects/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CController.php(270): CController->missingAction('create')
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/create')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=user/create
+---
+2017/01/02 13:12:59 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/demo/index.php?r=users/admin
+HTTP_REFERER=http://localhost/demo/index.php?r=users/create
+---
+2017/01/02 13:54:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: 'dd' for column 'cost' at row 1. The SQL statement executed was: INSERT INTO `items` (`brand_id`, `item_name`, `cost`, `selling`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php (73)
+in /home/abhinav/Projects/demo/index.php (13)
+2017/01/02 13:54:01 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: 'dd' for column 'cost' at row 1. The SQL statement executed was: INSERT INTO `items` (`brand_id`, `item_name`, `cost`, `selling`) VALUES (:yp0, :yp1, :yp2, :yp3) in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php(73): CActiveRecord->save()
+#3 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): ItemsController->actionCreate()
+#4 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#14 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+HTTP_REFERER=http://localhost/demo/index.php?r=itemMaster/items/create
+---
+2017/01/02 13:55:15 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#9 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/admin
+HTTP_REFERER=http://localhost/demo/index.php?r=itemMaster/items/create
+---
+2017/01/02 13:56:18 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /home/abhinav/Projects/yii/framework/web/CController.php:336
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#10 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/view
+---
+2017/01/02 13:56:42 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /home/abhinav/Projects/yii/framework/web/CController.php:336
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#10 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/view
+---
+2017/01/02 14:00:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: 'e' for column 'cost' at row 1. The SQL statement executed was: INSERT INTO `items` (`brand_id`, `item_name`, `cost`, `selling`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php (73)
+in /home/abhinav/Projects/demo/index.php (13)
+2017/01/02 14:00:02 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 1366 Incorrect decimal value: 'e' for column 'cost' at row 1. The SQL statement executed was: INSERT INTO `items` (`brand_id`, `item_name`, `cost`, `selling`) VALUES (:yp0, :yp1, :yp2, :yp3) in /home/abhinav/Projects/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(1080): CDbCommand->execute()
+#1 /home/abhinav/Projects/yii/framework/db/ar/CActiveRecord.php(809): CActiveRecord->insert(NULL)
+#2 /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php(73): CActiveRecord->save()
+#3 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): ItemsController->actionCreate()
+#4 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#14 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+HTTP_REFERER=http://localhost/demo/index.php?r=itemMaster/items/create
+---
+2017/01/02 14:00:08 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#9 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/admin
+HTTP_REFERER=http://localhost/demo/index.php?r=itemMaster/items/index
+---
+2017/01/02 14:07:47 [error] [exception.ParseError] ParseError: syntax error, unexpected ';' in /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php:73
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(338): CWebApplication->createController('view/', Object(ItemMasterModule))
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('items/view/')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/view&id=7
+---
+2017/01/02 14:07:50 [error] [exception.ParseError] ParseError: syntax error, unexpected ';' in /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php:73
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(338): CWebApplication->createController('create/', Object(ItemMasterModule))
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('items/create/')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+---
+2017/01/02 14:07:51 [error] [exception.ParseError] ParseError: syntax error, unexpected ';' in /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php:73
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(338): CWebApplication->createController('view/', Object(ItemMasterModule))
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('items/view/')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/view&id=6
+---
+2017/01/02 14:07:53 [error] [exception.ParseError] ParseError: syntax error, unexpected ';' in /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php:73
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(338): CWebApplication->createController('create/', Object(ItemMasterModule))
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('items/create/')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+---
+2017/01/02 14:08:08 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC) in /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php:85
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(338): CWebApplication->createController('view/', Object(ItemMasterModule))
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('items/view/')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/view&id=7
+---
+2017/01/02 14:31:23 [error] [exception.CException] CException: The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional. in /home/abhinav/Projects/yii/framework/zii/widgets/grid/CGridView.php:412
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/zii/widgets/grid/CGridView.php(383): CGridView->createDataColumn('items_id SORT D...')
+#1 /home/abhinav/Projects/yii/framework/zii/widgets/grid/CGridView.php(359): CGridView->initColumns()
+#2 /home/abhinav/Projects/yii/framework/web/CBaseController.php(147): CGridView->init()
+#3 /home/abhinav/Projects/yii/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 /home/abhinav/Projects/demo/protected/modules/itemMaster/views/items/create.php(22): CBaseController->widget('zii.widgets.gri...', Array)
+#5 /home/abhinav/Projects/yii/framework/web/CBaseController.php(126): require('/home/abhinav/P...')
+#6 /home/abhinav/Projects/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/abhinav/P...', Array, true)
+#7 /home/abhinav/Projects/yii/framework/web/CController.php(869): CBaseController->renderFile('/home/abhinav/P...', Array, true)
+#8 /home/abhinav/Projects/yii/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/ItemsController.php(76): CController->render('create', Array)
+#10 /home/abhinav/Projects/yii/framework/web/actions/CInlineAction.php(49): ItemsController->actionCreate()
+#11 /home/abhinav/Projects/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /home/abhinav/Projects/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home/abhinav/Projects/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /home/abhinav/Projects/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /home/abhinav/Projects/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /home/abhinav/Projects/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /home/abhinav/Projects/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(282): CController->run('create')
+#20 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/item...')
+#21 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/items/create
+---
+2017/01/02 14:56:21 [error] [exception.ParseError] ParseError: syntax error, unexpected 'public' (T_PUBLIC) in /home/abhinav/Projects/demo/protected/modules/itemMaster/controllers/BrandsController.php:85
+Stack trace:
+#0 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(338): CWebApplication->createController('create/', Object(ItemMasterModule))
+#1 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(276): CWebApplication->createController('brands/create/')
+#2 /home/abhinav/Projects/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('itemMaster/bran...')
+#3 /home/abhinav/Projects/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/abhinav/Projects/demo/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php?r=itemMaster/brands/create
+---
